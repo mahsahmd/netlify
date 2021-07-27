@@ -1,0 +1,401 @@
+/**** css reset ***/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul li {
+  list-style: none;
+}
+h1 {
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/**** navbar ***/
+
+.navbar {
+  background-color: #e04a58;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+}
+
+.fa-github {
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  font-size: 18px;
+}
+
+.menu a {
+  padding-left: 30px;
+}
+
+/***** form ********/
+.usersPage {
+  width: 80%;
+  margin: 0 auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.message {
+  align-self: flex-start;
+  margin-top: 20px;
+  width: 100%;
+  text-align: left;
+  background-color: rgb(240, 240, 240);
+  padding: 10px;
+  transition: 0.3s;
+}
+.message .fas {
+  color:rgb(66, 66, 66);
+  font-size: 18px;
+  display: inline-block;
+}
+.message p {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 18px;
+  color: #666;
+}
+
+form input {
+  margin: 30px 0 15px 0;
+  padding: 8px;
+  font-size: 20px;
+  border: 1px solid #4d4b4bb9;
+}
+
+button {
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.submitButton {
+  background-color: #333333;
+  color: white;
+}
+.submitButton:hover {
+  background-color: #333333af;
+}
+.clearButton {
+  background-color: rgb(223, 222, 222);
+  margin-top: 15px;
+}
+
+.clearButton:hover {
+  background-color: rgba(226, 226, 226, 0.562);
+}
+
+/****** usercard ********/
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user {
+  width: 33%;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d8d6d6;
+  margin: 20px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.user img {
+  width: 20%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.user p {
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+  font-size: 14px;
+}
+.user .moreButton {
+  color: white;
+  background-color: #333;
+  border: none;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+.user .moreButton:hover {
+  background-color: #666;
+  cursor: pointer;
+}
+
+/**** about ******/
+.about {
+  text-align: left;
+  padding: 30px;
+}
+.aboutTitle {
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.about p {
+  font-weight: 400;
+}
+
+/**** loader ***/
+.lds-roller{
+  margin-top: 40px;
+}
+.lds-roller,
+.lds-roller div,
+.lds-roller div:after {
+  box-sizing: border-box;
+}
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7.2px;
+  height: 7.2px;
+  border-radius: 50%;
+  background: currentColor;
+  margin: -3.6px 0 0 -3.6px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 62.62742px;
+  left: 62.62742px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 67.71281px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 70.90963px;
+  left: 48.28221px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 70.90963px;
+  left: 31.71779px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 67.71281px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 62.62742px;
+  left: 17.37258px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12.28719px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*** single user card ********/
+.singleUserPage {
+  padding: 20px 120px;
+}
+.fa-times {
+  color: red;
+}
+
+.fa-check {
+  color: green;
+}
+.buttonWrapper {
+  display: flex;
+  margin-bottom: 10px;
+}
+.backToSearchButton {
+  background-color: #f3f1f1;
+}
+.backToSearchButton,
+.hireAble {
+  color: #333;
+  padding: 8px 10px;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.singleUserCard {
+  border: 1px dotted rgb(187, 187, 187);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 20px;
+  color: #333;
+}
+
+.singleUserCard img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.singleUserCard .singleUserName {
+}
+.singleUserCard .singleUserLocation {
+}
+
+.singleUserCard h3 {
+  text-align: left;
+  align-self: flex-start;
+  margin-bottom: 5px;
+}
+.singleUserCard .singleUserBio {
+  text-align: left;
+  align-self: flex-start;
+  margin-bottom: 15px;
+}
+.singleUserCard .githubButton {
+  background-color: #333;
+  color: white;
+  padding: 8px 15px;
+  font-size: 16px;
+  align-self: flex-start;
+  margin-bottom: 15px;
+  transition: 0.8s;
+}
+.singleUserCard .githubButton:hover {
+  background-color: rgba(51, 51, 51, 0.63);
+}
+.singleUserCard .singleUserLogin,
+.singleUserCard .singleUserWeb {
+  align-self: flex-start;
+  font-weight: 400;
+}
+
+.userInfo {
+  display: flex;
+  justify-content:center;
+  border: 1px dotted rgb(187, 187, 187);
+  margin-top: 20px;
+  padding: 20px 30px;
+}
+.userInfo div {
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 10px;
+  color: white;
+  margin-left: 15px;
+}
+.userInfo .follower {
+  background-color: #dc3545;
+}
+.userInfo .following {
+  background-color: #f4f4f4;
+  border: 1px solid #cecece;
+  color: #333;
+}
+.userInfo .repos {
+  background-color: #28a745;
+}
+.userInfo .gits {
+  background-color: #333333;
+}
+
+.reposLink {
+  border: 1px dotted rgb(187, 187, 187);
+  margin: 20px 0;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.reposLink a {
+  color: #dc3f5a;
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+.reposLink a:hover {
+  color: rgb(78, 78, 78);
+}
+
+/*** mobile **/
+
+@media screen and (max-width: 749px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .menu a {
+    padding-left: 15px;
+  }
+  .fab {
+    display: none;
+  }
+  .users {
+    justify-content: center;
+  }
+}
